@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+
+{% block body %}
+
+<h1> Update</h1>
+<form method="POST">
+    {% csrf_token %}
+{{form}}
+
+<input type=submit value=update>
+</form>
+
+<a href="{% url 'home' %}">Back </a>
+
+
+
+
+
+
+
+{% endblock body %}

@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+
+{% block body %}
+
+<h2>Are You Sure You Want To Delete IT </h1>
+
+<a href="{% url 'confirm' ids %}"> YES </a>
+<a href="{% url 'home' %}">NO </a>
+
+
+
+
+{% endblock body %}
